@@ -1,0 +1,1 @@
+# tf-aws-lambda-http-apigateway_static_site

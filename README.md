@@ -1,6 +1,18 @@
 # tf-aws-lambda-http-apigateway_dynamic_site
 
-## home page
+## build
+
+```terraform
+terraform init
+```
+
+```terraform
+terraform apply --auto-approve
+```
+
+## test
+
+### home page
 
 ```bash
 curl https://brpypbym3l.execute-api.ap-southeast-2.amazonaws.com/home
@@ -10,7 +22,7 @@ curl https://brpypbym3l.execute-api.ap-southeast-2.amazonaws.com/home
 "Hello from Lambda!"
 ```
 
-## colors page
+### colors page
 
 return all colors
 
@@ -93,4 +105,10 @@ curl -X POST https://brpypbym3l.execute-api.ap-southeast-2.amazonaws.com/colors 
     "name": "Pink",
     "hex": "#FFC0CB"
   }'
+```
+
+## cleanup
+
+```terraform
+terraform destroy --auto-approve
 ```
